@@ -32,7 +32,7 @@ public class MacBluetoothMain {
 	
 	private static void printAsHex(byte[] b, int len) {
 		for (int i = 0; i < len; i++) {
-			System.out.printf("0x%02X ", b[i]);
+			System.out.print("0x" + Integer.toHexString(b[i]) + " ");
 		}
 		System.out.println("");
 	}
@@ -98,7 +98,7 @@ public class MacBluetoothMain {
 					int len = is.read(buffer);
 					// printAsHex(buffer, len);
 					if (len > 0) {
-						System.out.printf("received message(%d): %s\n", len, new String(buffer, 0, len));
+						System.out.println("received message(" + len + "): " + new String(buffer, 0, len));
 					}
 				}
 				//TODO: check connection is live or not,
@@ -168,7 +168,7 @@ public class MacBluetoothMain {
 				int len = is.read(buffer);
 				// printAsHex(buffer, len);
 				if (len > 0) {
-					System.out.printf("received message(%d): %s\n", len, new String(buffer, 0, len));
+					System.out.println("received message("+len+"): "+new String(buffer, 0, len));
 				}
 			}
 		} catch (Exception e) {

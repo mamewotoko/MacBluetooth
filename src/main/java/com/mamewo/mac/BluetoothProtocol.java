@@ -122,7 +122,8 @@ public class BluetoothProtocol {
 					serviceFound.add(new ServiceDesc(name, url));
 					
 					if (serviceName != null) {
-						System.out.printf("service(0x%X) %s found: %s\n", transID, name, url);
+						String hexStr = Integer.toHexString(transID);
+						System.out.println("service(0x" + hexStr + ") " + name + " found: " + url);
 					} else {
 						System.out.println("service found " + url);
 					}
@@ -130,7 +131,8 @@ public class BluetoothProtocol {
 			}
 
 			public void serviceSearchCompleted(int transID, int respCode) {
-				System.out.printf("service search completed!: 0x%X\n", transID);
+				String hexStr = Integer.toHexString(transID);
+				System.out.println("service search completed!: 0x" + hexStr);
 				switch (respCode) {
 				case SERVICE_SEARCH_COMPLETED:
 					System.out.println ("COMPLETED");
