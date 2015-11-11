@@ -1,4 +1,4 @@
-MacBluetooth
+MacBluetooth [![Build Status](https://travis-ci.org/mamewotoko/MacBluetooth.svg)](https://travis-ci.org/mamewotoko/MacBluetooth)
 ============
 
 What is this?
