@@ -1,5 +1,8 @@
-* What is this?
+MacBluetooth
+============
 
+What is this?
+-------------
 This is Java program that communicate with Android sample chat program distributed in the
 following web site. This program is included in Android SDK.
 
@@ -8,7 +11,7 @@ http://developer.android.com/resources/samples/BluetoothChat/index.html
 This program accepts connection as server.
 
 * How to build
-
+--------------
 1. Install bluecove library. To use it in 64bit Mac, you should install 2.1.1-SNAPSHOT version.
 Put jar file into lib directory of this project.
 
@@ -18,7 +21,8 @@ http://snapshot.bluecove.org/distribution/download/2.1.1-SNAPSHOT/2.1.1-SNAPSHOT
 
   mvn package
 
-* How to run
+How to run
+-----------
 
 1. From console, start jar file in the target directory.
 
@@ -37,14 +41,15 @@ OR use start.sh
   If you start with --client command line option, this program starts as client. At first, you must
   configure android device to make discoverable. Then start this program with --client option.
 
-* Future work?
+Future work?
+-----------
 
-  Handle disconnect
-  Write test
-  Add proper license file for this source code
-  Use reader class
-  Define InputThread
+* Handle disconnect
+*  Write test
+* Add proper license file for this source code
+* Use reader class
+* Define InputThread
 
 ---
 Takashi Masuyama <mamewotoko@gmail.com>
-http://www002.upp.so-net.ne.jp/mamewo/
+http://mamewo.ddo.jp/
