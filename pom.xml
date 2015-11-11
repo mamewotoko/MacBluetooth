@@ -86,11 +86,11 @@
     <dependency>
       <groupId>net.sf.bluecove</groupId>
       <artifactId>bluecove</artifactId>
-      <version>2.1.0</version>
-<!--
+      <version>2.1.1</version>
+<!-- to use 2.1.1 download from site -->
       <scope>system</scope>
       <systemPath>${basedir}/lib/bluecove-2.1.1-SNAPSHOT.jar</systemPath>
--->
+
     </dependency>
   </dependencies>
   <!--  use snapshot  
