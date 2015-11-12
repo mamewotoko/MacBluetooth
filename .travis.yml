@@ -1,5 +1,4 @@
-language: java
-script:
-   - sh jenkins.sh
+script: 
+        - sh jenkins.sh
 
 
