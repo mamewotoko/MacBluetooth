@@ -5,8 +5,12 @@
   <groupId>com.mamewo.mac</groupId>
   <organization>
     <name>Takashi Masuyama</name>
-    <url>http://mamewo.ddo.jp/</url>
+    <url>https://mamewo.ddo.jp/</url>
   </organization>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -32,6 +36,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
         <configuration>
           <archive>
             <manifest>
@@ -81,17 +86,18 @@
     </pluginRepository>
   </pluginRepositories>
 
+  <!-- to use 2.1.1 download from site -->
+  <!--
   <dependencies>
     <dependency>
       <groupId>net.sf.bluecove</groupId>
       <artifactId>bluecove</artifactId>
       <version>2.1.1</version>
-      <!-- to use 2.1.1 download from site -->
       <scope>system</scope>
-      <systemPath>${basedir}/lib/bluecove-2.1.1-SNAPSHOT.jar</systemPath>
-
+      <systemPath>${project.basedir}/lib/bluecove-2.1.1-SNAPSHOT.jar</systemPath>
     </dependency>
   </dependencies>
+  -->
   <!--  use snapshot  
        <repositories>
        <repository>

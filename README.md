@@ -52,4 +52,4 @@ Future work?
 
 ---
 Takashi Masuyama <mamewotoko@gmail.com>
-http://mamewo.ddo.jp/
+https://mamewo.ddo.jp/
